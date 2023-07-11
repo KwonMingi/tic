@@ -18,7 +18,7 @@ class TikTokApp extends StatelessWidget {
       home: Padding(
         padding: const EdgeInsets.all(Sizes.size14),
         child: Container(
-          child: Row(children: const [
+          child: const Row(children: [
             Text('hello'),
             Gaps.h20,
             Text('hello'),
