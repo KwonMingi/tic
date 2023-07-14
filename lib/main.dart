@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tctk/constants/gaps.dart';
 import 'package:tctk/constants/sizes.dart';
 
 void main() {
@@ -13,18 +12,20 @@ class TikTokApp extends StatelessWidget {
     return MaterialApp(
       title: 'TikTok Clone',
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
         primaryColor: const Color(0xFFE9435A),
-      ),
-      home: Padding(
-        padding: const EdgeInsets.all(Sizes.size14),
-        child: Container(
-          child: const Row(children: [
-            Text('hello'),
-            Gaps.h20,
-            Text('helloee666'),
-          ]),
+        appBarTheme: const AppBarTheme(
+          foregroundColor: Colors.black,
+          backgroundColor: Colors.white,
+          elevation: 0,
+          titleTextStyle: TextStyle(
+            color: Colors.black,
+            fontSize: Sizes.size16 + Sizes.size2,
+            fontWeight: FontWeight.w600,
+          ),
         ),
       ),
+      home: const SignUpScreen(),
     );
   }
 }
